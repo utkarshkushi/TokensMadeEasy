@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <title>Tokens Made Easy</title>
+    <style>
+
+        body{
+            background: rgb(3, 2, 20);
+        }
+
+        .nav-link{
+            color: white;
+            font-family: 'Poppins';
+            font-size: 20px;
+            text-align: center;
+            padding: 10px 20px;
+            margin-left: 20px;
+            transition: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in;
+    cursor: pointer;
+        }
+        .nav-link:hover{
+            border-radius: 20px;
+            background: #E5BEEC;
+            color: black;
+        }
+        .special-link{
+            color: white;
+            font-family: 'Poppins';
+            font-size: 20px;
+            text-align: center;
+            padding: 10px 20px;
+            margin-left: 20px;
+            border-radius: 20px;
+            background: #E5BEEC;
+            color: black;
+        }
+        .nav-links{
+            display: flex;
+
+        }
+        .logo-img{
+            width: 150px;
+            height: 50px;
+        }
+        .nav-bar{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .form-display{
+            margin: 20px 150px;
+            background: #2A2F4F;
+            border-radius: 20px;
+        }
+        .title-text{
+            /* margin-top: 100px; */
+            font-family: 'Poppins';
+            color: #E5BEEC;
+            font-size: 40px;
+            font-weight: 600;
+            text-align: center;
+        }
+        .input-label{
+            font-family: 'Poppins';
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: left;
+        }
+        .input-field{
+            width: 900px;
+            font-family: 'Poppins';
+            font-size: 18px;
+            font-weight: 500;
+            /* height: 30px; */
+            border-radius: 10px;
+            margin-top: 10px;
+            border: none;
+            padding: 10px 5px;
+            
+        }
+        .input-field:focus{
+            outline: none;
+        }
+        .form-field{
+            margin-top: 20px;
+        }
+        .form-section{
+            /* padding: 10px 30px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        .submit-btn-box{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .submit-btn{
+
+            margin-left: 10px;
+            border-radius: 20px;
+            padding: 5px 15px;
+            background: #FDE2F3;
+            color: black;
+            border: none;
+            font-size: 20px;
+            font-family: 'Poppins';
+            font-size: 500;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="logo-img">
+            <img class="logo-img" src="/own/TKE.png" alt="">
+        </div>
+        <div class="nav-links">
+            <h1 class="nav-link">GitHub</h1>
+            <h1 class="nav-link special-link" id="connect-wallet">Connect Wallet</h1>
+        </div>
+    </nav>
+    <div class="form-display">
+        <h1 class="form-title title-text">Create Your Token</h1>
+        <form action="" class="form-section">
+            <div class="form-field">
+                <label for="currency-name" class="input-label">currency Name</label><br>
+            <input type="text" name="currency-name" id="name" class="input-field" placeholder="eg. Shiba Inu, Ethereum, Bitcoin">
+            </div>
+            <div class="form-field">
+                <label for="currency-symbol" class="input-label">currency Symbol</label><br>
+            <input type="text" name="currency-symbol" id="symbol" class="input-field" placeholder="eg. SHB, ETH, BTC">
+            </div>
+            <div class="form-field">
+                <label for="tokens-per-eth" class="input-label">No of Tokens Per ETH(only integer)</label><br>
+            <input type="number" name="tokens-per-eth" class="input-field" id="tokens-per-eth" placeholder="eg. 1 ETH = 10 Tokens / 1 ETH = 15 Tokens">
+            </div>
+            <div class="form-field">
+                <label for="initial-mint" class="input-label">Initial Mint(only integer)</label><br>
+            <input type="number" name="initial-mint" class="input-field" id="initial-mint" placeholder="Initial number of tokens to be minted to owner's address">
+            </div>
+            <div class="form-field">
+                <label for="desciption" class="input-label">Project Description</label><br>
+            <!-- <input type="text" name="desciption" class="input-field" id="desciption placeholder=""> -->
+            <textarea name="desciption" id="desciption" class="input-field" rows="10" placeholder="Give us a brief description about your project"></textarea>
+            </div>
+            <div class="form-field">
+                <label for="incentives" class="input-label">Token Holder Incentives(Seperate by ,)</label><br>
+            <input type="text" name="incentives" class="input-field" id="incentives" placeholder="eg. Token holder will be provided with 2 months free subscription, Token holding incentives, etc">
+            </div>
+            <div class="form-field">
+                <label for="web" class="input-label">Project Domain</label><br>
+            <input type="text" name="web" id="web" class="input-field" placeholder="eg.  web2 / web3">
+            </div>
+            <div class="form-field">
+                <label for="link" class="input-label">Prototype link(optional)</label><br>
+            <input type="text" name="link" class="input-field" id="link" placeholder="eg. Token holder will be provided with 2 months free subscription, Token holding incentives, etc">
+            </div>
+            <div class="submit-btn-box">
+                <button class="submit-btn" id="submit-btn" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script>
+    <script>
+        const web3 = new Web3(window.ethereum);
+        let ADDRESS = '0xF17a28D47CF452dEBA7750fb7afAC3e01590e08B';
+        let ABI = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"uint256","name":"bal","type":"uint256"}],"name":"balance","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"string","name":"name","type":"string"}],"name":"name","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"string","name":"symbol","type":"string"}],"name":"symbol","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"uint256","name":"tok","type":"uint256"}],"name":"tokensPerEth","type":"event"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"addressIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"contractOwner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"string","name":"_name","type":"string"},{"internalType":"string","name":"_symbol","type":"string"},{"internalType":"uint256","name":"_noOfTokens","type":"uint256"},{"internalType":"uint256","name":"_noOfTokensPerETH","type":"uint256"}],"name":"createNewProjectToken","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"deployedAddress","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_contractOwnerAddress","type":"address"}],"name":"knowNoOfTokensPerETH","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_contractOwnerAddress","type":"address"}],"name":"knowTokenName","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_contractOwnerAddress","type":"address"}],"name":"knowTokenSymbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_contractOwnerAddress","type":"address"}],"name":"knowYourBalance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"knowYourContractAddress","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_contractOwnerAddress","type":"address"}],"name":"mintYourContractTokens","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address payable","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"projectTokenArray","outputs":[{"internalType":"contract ProjectToken","name":"","type":"address"}],"stateMutability":"view","type":"function"}]
+        let account;        
+        const connectWallet = document.getElementById('connect-wallet');
+        
+        connectWallet.addEventListener('click', async()=>{
+            connectWallet.innerText = 'Connecting...'
+            const connectMetaMask = async () => {
+                    if (window.ethereum != "undefined") {
+                        ethereum.request({ method: "eth_requestAccounts" }).then(accounts => {
+                            account = accounts[0];
+                            console.log("metamask connected " + account);
+                            connectWallet.innerText = account;
+                            // connectContract().then(() => changeNumber().then(() => {console.log("change done")}));
+                        })
+                    }
+                }
+                connectMetaMask();
+            })
+            
+        const submitBtn = document.getElementById('submit-btn');
+        
+        submitBtn.addEventListener('click', (event)=>{
+            console.log('clicked...')
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const symbol = document.getElementById('symbol').value;
+            const tokensPerETH = document.getElementById('tokens-per-eth').value;
+            const initialMint = document.getElementById('initial-mint').value;
+            const desciption = document.getElementById('desciption').value;
+            const incentives = document.getElementById('incentives').value;
+            const link = document.getElementById('link').value;
+            const web = document.getElementById('web').value;
+
+            let tokens = parseInt(tokensPerETH);
+            let initial = parseInt(initialMint);
+            console.log(tokens, initial);
+            if(name == '' && symbol == '' && web == ''){
+                alert('Name and Symbol should be filled');
+                return;
+            }
+            if(tokens < 0 && initial < 0){
+                alert('Tokens per ETH and Initial mint tokens should be above 0');
+                return;
+            }
+            if(desciption == '' && incentives == ''){
+                alert('Description and incentives wil help public to understand your project more and chances of you receiving investment is high');
+                return;
+            }
+            
+
+            if(account == undefined){
+                alert('connect your metamask wallet');
+                return;
+            }
+
+            
+            
+            // const myLinkArray = incentives.split(",");
+            connectContract().then(() => createToken(name, symbol, initial, tokens).then(() => {
+                console.log("Successfully creted your own token");
+                let nextLink = `/addProject?address=${account}&name=${name}&symbol=${symbol}&tokensPerEth=${tokens}&initialMint=${initial}&description=${desciption}&incentives=${incentives}&web=${web}&link=${link}`;
+                window.location.href = nextLink;
+            }));
+            
+
+
+        })
+
+        const connectContract = async () => {
+                    console.log(ABI + " " + ADDRESS);
+                    window.web3 = await new Web3(window.ethereum);
+                    window.contract = await new window.web3.eth.Contract(ABI, ADDRESS);
+                    // console.log("contract connected");
+        }
+
+        const createToken = async (name, symbol, initial, tokens) => {
+                    // let nameFormatted = web3.utils.utf8ToHex(name);
+                    // let symbolFormatted = web3.utils.utf8ToHex(name);
+                    // console.log(nameFormatted + "    " + symbolFormatted);
+
+                    console.log(name , symbol, initial, tokens);
+                    
+                    await window.contract.methods.createNewProjectToken(name, symbol , initial, tokens).send({from: account, value: 1000000000000000000});
+                   
+                }
+    </script>
+    
+</body>
+</html

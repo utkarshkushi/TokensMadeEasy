@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <title>Portfolio</title>
+    <style>
+        body {
+            /* background-color: black; */
+            /* background-image: url('./Untitled\ design\ \(1\).png'); */
+            background: rgb(3, 2, 20);
+/* background: linear-gradient(90deg, rgba(2,0,36,1) 100%, rgba(6,17,54,1) 100%); */
+
+        }
+        .main {
+            /* padding-left: 100px; */
+            /* margin-top: 50px; */
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-around; */
+            align-items: center;
+
+        }
+
+
+        .earth {
+            width: 400px;
+            height: 400px;
+            /* top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0; */
+            /* margin: auto; */
+            background-image: url('/own/12232.jpg');
+            /* position: absolute; */
+            border-radius: 50%;
+            background-size: cover;
+            box-shadow: -20px -20px 50px 2px rgb(14, 14, 14) inset, 0 0 20px 2px #000;
+            animation: spin 30s linear alternate infinite;
+        }
+
+        @keyframes spin {
+            100% {
+                background-position: 100%;
+            }
+        }
+
+
+
+        .title-text{
+            /* margin-top: 100px; */
+            font-family: 'Poppins';
+            color: #E5BEEC;
+            font-size: 40px;
+            font-weight: 600;
+            text-align: center;
+        }
+        .desription{
+            font-family: 'Poppins';
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+            color: white;
+        }
+        .dynamic-text{
+            font-family: 'Poppins';
+            font-size: 30px;
+            font-weight: 500;
+            text-align: center;
+            color: white;
+        }
+        
+        .nav-link{
+            color: white;
+            font-family: 'Poppins';
+            font-size: 20px;
+            text-align: center;
+            padding: 10px 20px;
+            margin-left: 20px;
+            transition: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in;
+    cursor: pointer;
+        }
+        .nav-link:hover{
+            border-radius: 20px;
+            background: #E5BEEC;
+            color: black;
+        }
+        .special-link{
+            color: white;
+            font-family: 'Poppins';
+            font-size: 20px;
+            text-align: center;
+            padding: 10px 20px;
+            margin-left: 20px;
+            border-radius: 20px;
+            background: #E5BEEC;
+            color: black;
+        }
+        .nav-links{
+            display: flex;
+
+        }
+        .logo-img{
+            width: 150px;
+            height: 50px;
+        }
+        .nav-bar{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .auto-type{
+            color: #E5BEEC ;
+        }
+        .project-display{
+            margin: 10px 120px;
+        }
+        .project-box{
+            background-color: #2A2F4F;
+            margin: 20px 20px;
+            display: flex;
+            border-radius: 20px;
+        }
+        .project-logo-box{
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            border-radius: 50%;
+        }
+
+        .project-logo-side{
+            margin-left:20px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .project-logo{
+            width: 50px;
+            height: 50px;
+        }
+        .project-title{
+            font-family: 'Poppins';
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: left;
+        }
+        .project-tokens{
+            font-family: 'Poppins';
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+            text-align: left;
+        }
+        .details-side{
+            margin-left: 30px;
+        }
+        .project-more-details{
+            font-family: 'Poppins';
+            font-size: 15px;
+            border-radius: 20px;
+            background: #E5BEEC;
+            color: black;
+            padding: 5px 10px;
+            width: 100px;
+            text-align: center;
+        }
+        .search-form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .search-input-field{
+            width: 200px;
+            height: 30px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 15px;
+            font-family: 'Poppins';
+            padding: 0 10px;
+        }
+        .search-btn{
+            margin-left: 10px;
+            border-radius: 20px;
+            padding: 5px 15px;
+            background: #FDE2F3;
+            color: black;
+            border: none;
+            font-size: 15px;
+            font-family: 'Poppins';
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="logo-img">
+            <img class="logo-img" src="/own/TKE.png" alt="">
+        </div>
+        <div class="nav-links">
+            <h1 class="nav-link">GitHub</h1>
+            <h1 class="nav-link special-link">Let's Build -></h1>
+        </div>
+    </nav>
+    <div class="main">
+        
+        <div class="container">
+            <h1 class="title-text">Tokens Made Easy</h1>
+            <h1 class="desription">Though creating your're own Crypto Tokens is an easy task, it is also a time consuming knowledge based task. So we have bought you a one stop solution to all your crypto needs.</h1>
+            <h1 class="dynamic-text">Build your own crypto tokens to <span class="auto-type"></span></h1>
+
+            <!-- <h1 class="dynamic-text">To <span class="auto-type"></span></h1> -->
+        </div>
+        <div class="earth"></div>
+    </div>
+    <div class="project-display">
+        <h1 class="title-text">Projects You Can Invest</h1>
+        <div class="search-form">
+            <input class="search-input-field" type="text" placeholder="Search by project name"> 
+            <button class="search-btn">Search</button>
+        </div>
+        <div class="project-box">
+            <div class="project-logo-side">
+                <div class="project-logo-box">
+                    <img class="project-logo" src="/own/gdd-removebg-preview.png" alt="">
+                </div>
+            </div>
+            <div class="details-side">
+                <h1 class="project-title">Gari Developers DAO</h1>
+                <h1 class="project-tokens">1 ETH = <span class="no-of-tokens">10 </span>Tokens</h1>
+                <h1 class="project-more-details">Learn More</h1>
+            </div>
+        </div>
+        <div class="project-box">
+            <div class="project-logo-side">
+                <div class="project-logo-box">
+                    <img class="project-logo" src="/own/puneDao.png" alt="">
+                </div>
+            </div>
+            <div class="details-side">
+                <h1 class="project-title">FUN MOVE DAO</h1>
+                <h1 class="project-tokens">1 ETH = <span class="no-of-tokens">8 </span>Tokens</h1>
+                <h1 class="project-more-details">Learn More</h1>
+            </div>
+        </div>
+        <div class="project-box">
+            <div class="project-logo-side">
+                <div class="project-logo-box">
+                    <img class="project-logo" src="/own/HYD DAO Logo - Black.png" alt="">
+                </div>
+            </div>
+            <div class="details-side">
+                <h1 class="project-title">Move Developers DAO</h1>
+                <h1 class="project-tokens">1 ETH = <span class="no-of-tokens">15 </span>Tokens</h1>
+                <h1 class="project-more-details">Learn More</h1>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+
+        var typed = new Typed(".auto-type", {
+            strings: ["raise funds for your project.", "create your ecosystem.", "just to have fun."],
+            typeSpeed: 150,
+            backspeed: 150,
+            loop: true
+
+        });
+    </script>
+
+</body>
+
+</html>
